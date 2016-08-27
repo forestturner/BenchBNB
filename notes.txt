@@ -1,0 +1,71 @@
+Mvp
+heroku link
+wireframes
+components
+schema
+redux structure
+timeline
+
+MVP
+- list of features that are absolutely necessary
+
+1. deployed to Heroku
+2. new accounts - creation, login and demo login
+3, satisfactory styling
+4. smooth bug free nav
+5. seed data
+6.readme - replacing development readme
+
+start on wireframes.
+lay react components
+sketch.
+follow the user journey
+details wireframes for every view a user could see
+make sure to include large dropdowns or collapsible containers
+wireframe tools: draw.io, balsamiq, photoshop,
+this is probably the most part of your proposal.
+
+1.wireframe after the user log ins.
+2. possible sidebar. only mvps.
+3. look for actions. (like hovering, )
+4. index items
+5. crud
+6. list components
+ * example
+  1.sidebar
+  2.noteIndex
+  3.notebook search
+
+React components and routes
+a list hierarchy of your site's components
+paths to define when components are mounted.
+
+schema
+detailed representation of your database schema.
+
+sample state and reudux structure
+a javscript object describing what the application at any point in time
+request actions > api > receive actions > reducer > components
+
+implementation timeline
+the order your plan
+
+-readme
+phase 1 - backend setup and front end user authentucation (2days)
+example =
+new rails project
+user model/migration
+seed users
+
+
+your timeline should be very detailed list every task neccessay to complete each feature.
+if you don't know how to complete a task, schedule time for research or meeting with you project manager.
+- bonus features on the timeline.
+
+
+How will requirements be tracked..
+every check your trello board and move any TOdos tasks to review list.
+read any comments
+push current build to github.
+
+w9d5
