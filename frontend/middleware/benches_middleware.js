@@ -1,12 +1,21 @@
-import { BenchConstants } from '../actions/bench_actions';
-import { fetchAllBenches } from '../util/api_util';
-
+// Bench API Util
+import { fetchBenches,
+         fetchBench,
+         createReview,
+         createBench
+       } from '../util/api_util';
+// Bench Action
+import { requestBenches,
+         receiveBench,
+         receiveBenches,
+         BenchConstants
+       } from '../actions/bench_actions';
 
 const BenchesMiddleware = ({getState, dispatch}) => next => action => {
   switch(action.type){
     case BenchConstants.REQUEST_BENCHES:
       const success = data => dispatch(receiveBenches(data))
-      fetchBenches(success);
+      fetchAllBenches(success);
       break;
     default:
       next(action);

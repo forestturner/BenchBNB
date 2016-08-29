@@ -1,23 +1,48 @@
 
 import React from 'react';
 import { Provider } from 'react-redux';
-import AppRouter from './router.jsx';
+import BenchIndexContainer from './bench_index_container';
+import BenchIndex from './bench_index';
 
 const Root = ({store}) => (
   <Provider store={store}>
-    <AppRouter/>
+    {BenchIndexContainer}
   </Provider>
 );
 
-export default Root;
+// const requestAllBenchesOnEnter = () => {
+//   store.dispatch(Actions.requestAllBenches());
+// }
+// const requestSingleBenchOnEnter = () => {
+//   store.dispatch(Actions.requestSingleBench(nextState.params.benchId));
+// }
+//
+//   <Provider store={store}>
+//     <Router history = {hashHistory}>
+//       <Route path="/" component={BenchIndexContainer} onEnter={requestAllBenchesOnEnter}>
+//         <IndexRoute component=
+//     <BenchIndexContainer/>
+//     </Router>
+//   </Provider>
+// );
+//
+// export default Root;
+//
+// // 		store.dispatch(Actions.requestSinglePokemon(nextState.params.pokemonId));
+// // 	};
+// //
+//  	return (
+//      		<Provider store={store}>
+//  			<Router history={hashHistory}>
+//  				<Route path="/" component={PokemonIndexContainer} onEnter={requestAllPokemonOnEnter}>
+//  					<IndexRoute component={PokemonFormContainer}/>
+//  					<Route 	path="pokemon/:pokemonId"
+// // 									component={PokemonDetailContainer} onEnter={requestSinglePokemonOnEnter}>
 
 
-export default Root;
 
-
-
-
-{/* <IndexRoute component={BenchFormContainer}/>
-<Route 	path="Bench/:BenchId"
-component={BenchDetailContainer} onEnter={requestSingleBenchOnEnter}>
-</Route> */}
+//
+// //{/* <IndexRoute component={BenchFormContainer}/>
+// {/* <Route 	path="Bench/:BenchId"
+// component={BenchDetailContainer} onEnter={requestSingleBenchOnEnter}>
+// </Route> */} */} */}
